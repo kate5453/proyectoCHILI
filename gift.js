@@ -169,6 +169,8 @@ function iniciarRuleta(){
 var puntero = document.getElementById("puntero");
 var resultado = document.getElementById("resultado");
 var reclamarBtn = document.getElementById("reclamar-btn");
+var btnReclamar = document.getElementById("btn-reclamar");
+
 
 let gira = 0;
 let giraTotal = 0;
@@ -233,15 +235,17 @@ ruleta.addEventListener("transitionend", function() {
         resultado.style.display = 'block';
         resultado.style.opacity = '1';
         reclamarBtn.style.display = 'block';
+        console.log(btnReclamar);
+        btnReclamar.style.display = 'block';
     }, 1000); 
 });
 
 // Redireccionar al hacer clic en "Reclamar"
-reclamarBtn.addEventListener("click", function() {
-    alert("¡Premio reclamado!");
-    // Aquí puedes redirigir a otra página si deseas:
-    // window.location.href = 'https://www.tu-pagina.com/reclamar';
-});
+// reclamarBtn.addEventListener("click", function() {
+//     alert("¡Premio reclamado!");
+//     // Aquí puedes redirigir a otra página si deseas:
+//     // window.location.href = 'https://www.tu-pagina.com/reclamar';
+// });
 
 }
 

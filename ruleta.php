@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juega y Gana</title>
-    <link rel="stylesheet" href="ruleta.css">
 </head>
 <body>
     <h1>Prueba tu suerte! Haz click en la ruleta</h1>
@@ -90,7 +89,7 @@
     </div>
 
     <div id="resultado"></div>
-    <button id="reclamar-btn"><a href="./salida/index.html">Reclamar</a></button>
+    <button id="reclamar-btn" class="reclamar-btn"><a href="./salida/index.html">Reclamar</a></button>
 
     <script src="ruleta.js" type="module"></script>
 </body>

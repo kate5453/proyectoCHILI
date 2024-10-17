@@ -88,6 +88,12 @@ body {
 
     font-size: .9rem;
     color: #f2f2f2;
+
+    cursor: pointer;
+}
+
+#options-container > .option-button:hover{
+    background-color: #555;
 }
 
 #user-input {
@@ -189,6 +195,9 @@ body {
     overflow: hidden;
 }
 
+.transparent{
+    opacity: 0;
+}
 
 /* GIFT BOXES */
 .regalo{
@@ -233,7 +242,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+
+    animation: pop 1s ease forwards alternate infinite;
 }
+
+.box__container:hover{
+    animation: none;
+    transform: scale(1.1);
+    transition: all .75s ease-in;
+}
+
+
+@keyframes pop {
+    0% {
+        transform: translateX(0%) translateY(-10px) scale(0.85); /* Comienza fuera de la pantalla */
+    }
+    100% {
+        transform: translateX(0%) translateY(0) scale(1); /* Aparece y se expande */
+    }
+  }
 
 
 /* Modal gift estilos */

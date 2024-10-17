@@ -45,7 +45,7 @@
             transition: all 2s ease-out;
         }
 
-        #reclamar-btn {
+        .reclamar-btn {
             background-color: #FF5722;
             color: white;
             border: none;
@@ -60,7 +60,7 @@
             animation: heart-beat 1.5s ease-in-out infinite;
         }
 
-        #reclamar-btn a{
+        .reclamar-btn a{
             text-decoration: none;
             color: white;
         }
@@ -74,7 +74,7 @@
             }
         }
 
-        #reclamar-btn:hover{
+        .reclamar-btn:hover{
             background-color: #ff8d22;
             transition: background-color .3s ease-in;
 

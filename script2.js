@@ -175,11 +175,15 @@ function showSurprise() {
         const flores = document.querySelector('.flores');
         const titulo = document.querySelector('#titulo');
         const flowers = this.document.querySelector('#flowers');
+        const floresAudio = document.getElementById('flores-audio'); //Obtener elemento audio de las flores
 
         console.log(window.scrollY);
         console.log(window.innerHeight);
         if (window.scrollY >= window.innerHeight) {  // Mostrar cuando se deslice hacia abajo
             audio.pause();
+
+            //Reproducir el audio de las flores
+            floresAudio.play(); //Iniciar el audio de las flores
             flores.style.opacity = '1';
             titulo.classList.add('titulo');
 

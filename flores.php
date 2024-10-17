@@ -8,13 +8,14 @@
     <title>Flower</title>
   </head>
   <body class="container">
-    <!-- <audio src="./audio/ChristianBasso&HaienQiu-Flowers.mp3" autoplay></audio> -->
+    <!-- <audio id="flores-audio" src="./audio/ChristianBasso&HaienQiu-Flowers.mp3"></audio> -->
+    <audio id="flores-audio" src="./audio/yellowPhotograph_mashup.mp3"></audio>
     <div id="lyrics">
       
     </div>
     
     <h1 id="titulo">Muchos pueden dar flores que durarán días, estas, son para siempre :D <br> <br>
-      Gracias por iluminar mis días con tu presencia.</h1>
+      <span class="transparent">Gracias por iluminar mis días con tu presencia.<span></h1>
     <div class="night"></div>
     <div class="flowers" id="flowers">
       <div class="flower flower--1">
